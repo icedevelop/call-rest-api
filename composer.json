@@ -1,0 +1,22 @@
+{
+  "name": "brunopicci/call-rest-api",
+  "type": "symfony-bundle",
+  "description": "This bundle implements a service to call rest api",
+  "keywords": ["rest"],
+  "homepage": "https://github.com/brunopicci/call-rest-api",
+  "license": "MIT",
+  "require": {
+    "php": "^5.3.3 || ^7.0"
+  },
+  "authors": [
+    {
+      "name": "Bruno Piccirilli",
+      "email": "brunopicci@icloud.com"
+    }
+  ],
+  "autoload":{
+    "psr-4":{
+      "Services\\Bundle\\Rest\\": ""
+    }
+  }
+}

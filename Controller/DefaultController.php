@@ -1,0 +1,33 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: bruno
+ * Date: 11/2/16
+ * Time: 12:41 PM
+ */
+
+namespace Services\Bundle\Rest\Controller;
+
+use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
+
+/**
+ * This class render the Controller
+ *
+ * Class DefaultController
+ * @package Services\Bundle\Rest\Controller
+ */
+class DefaultController extends Controller
+{
+    /**
+     * Method to render services information
+     *
+     * @Route("/")
+     *
+     * @return mixed
+     */
+    public function indexAction()
+    {
+        return $this->render('ServicesBundle:Default:index.html.twig');
+    }
+}
