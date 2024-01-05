@@ -53,6 +53,13 @@ class Risultato
     private $errorCode;
 
     /**
+     * this contains error information for CRM
+     *
+     * @var
+     */    
+    private $listaerroriazienda;
+
+    /**
      * get success value
      *
      * @return boolean
@@ -70,6 +77,26 @@ class Risultato
     public function setSuccess($success)
     {
         $this->success = $success;
+    }
+
+    /**
+     * set cust value
+     *
+     * @param mixed
+     */
+    public function setCustomFields($listaerroriazienda)
+    {
+        $this->listaerroriazienda = $listaerroriazienda;
+    }
+
+    /**
+     * get cust
+     *
+     * @return mixed
+     */
+    public function getCustomFields()
+    {
+        return $this->listaerroriazienda;
     }
 
     /**
